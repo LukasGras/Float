@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/background.jpg) ;
+    background-size: cover;
+    background-position: top;
+}
+
+body.work-1 {
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/background.jpg) ;
+  background-size: cover;
+  background-position: top;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 16px;
+}
+
+
+.navbar {
+    position: float;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px #DBDFAA;
+}
+.navbar ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    /* text-transform: uppercase; */
+    font-size: 2em;
+    align-items: center;
+
+}
+
+.navbar ul li a:link {text-decoration: none}
+.navbar ul li a:visited {text-decoration: none}
+.navbar ul li a:hover {text-decoration: none}
+.navbar ul li a:active {text-decoration: none}
+
+.navbar ul li a {
+    color: #B3C890;
+}
+
+.navbar a {
+    display: inline-block;
+    position: relative;
+    color: #73A9AD;
+    background:
+      linear-gradient(-90deg, #ff0101  40%, #000000 0 60%, #ff0101  0) right/300% 100% no-repeat,
+      linear-gradient(-90deg, #55000000 40%, #73A9AD 0 60%, #0000 0) right/300% 90% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.8s
+    
+  }
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 20px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #73A9AD;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+    transition-delay: 0.5s;
+  }
+  
+  .navbar a:hover::after {
+    border-radius: 20px;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition-delay: 0;
+    
+  }
+
+  
+  .navbar a:hover {
+    background-position: left;
+  }
+
+  section.center {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: #0974b3;
+  }
+
+
+  /* Work-1 */
+
+
+  img.img {
+    width: 120px;
+    float:left ;
+    padding-right: 20px;
+  }
+
+  h1.name {
+    color:#0974b3 ;
+  }
+
+  article.art-1 {
+    overflow: auto;
+    width: 47%;
+    height: 250px;
+    margin: 30px;
+    padding: 20px;
+    background: white;
+    border-top: 5px solid #0974b3;
+    
+  }
+
+  article p {
+    color: #666;
+    font-size: 0.8em;
+  }
+ 
+  article.art {
+    width: 400px;
+    height: 350px;
+    margin: 30px;
+    padding: 20px;
+    background: white;
+    border-top: 5px solid #0974b3;
+    
+  }
+  .inline {
+    display: inline-block;
+  }
+
+  .float-container {
+    float: left;
+  }
+  
+
+  /* WorkTwo */
+
+  article.art1 a:link {text-decoration: none}
+  article.art1 a:visited {text-decoration: none}
+  article.art1 a:hover {text-decoration: none}
+  article.art1 a:active {text-decoration: none}
+
+  article.art1 {
+    overflow: hidden;
+    width: 250px;
+    height: 600px;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-top: 5px solid grey;
+    transition: 0.2s ease-in-out;
+    
+  }
+
+  article.art1 button{
+    background: #0974b3;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px 0 20px 0;
+  }
+  article.art1 button a {
+    color: white;
+  }
+
+
+  article.art1 button:hover {
+    background: #043049;
+    cursor: pointer;
+  }
+
+
+
+  .float-containertwo {
+    margin-top: 60px;
+    float: left;
+  }
+  article.art1:hover {
+    cursor: pointer;
+    transform: translate(0, -20px);
+    border-color: #0974b3;
+
+  }
+
+  img.img2 {
+    display: block;
+    width: 120px;
+    float:left ;
+    padding-right: 20px;
+    
+  }
+
+  .glass img {
+    margin-left: -110px;
+    margin-top: 40px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+  }
+
+  .glass img:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
